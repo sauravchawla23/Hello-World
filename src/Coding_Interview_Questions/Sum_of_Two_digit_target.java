@@ -1,5 +1,6 @@
 package Coding_Interview_Questions;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Sum_of_Two_digit_target {
@@ -13,6 +14,7 @@ public class Sum_of_Two_digit_target {
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
         int target = sc.nextInt();
         int s = 0 ;
         int e=arr.length-1;
