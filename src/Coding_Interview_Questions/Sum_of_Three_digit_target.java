@@ -7,8 +7,6 @@ public class Sum_of_Three_digit_target {
     public static void main(String[] args) {
         int arr[] = {0,1,2,3,4,5};
         Arrays.sort(arr);
-        int start = 0;
-        int end = arr.length-1;
         int target = 7;
 
         for (int i = 0; i < arr.length - 2; i++) {
