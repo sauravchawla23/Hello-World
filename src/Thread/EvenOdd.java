@@ -3,6 +3,12 @@ package Thread;
 public class EvenOdd {
     int count = 1;
     public static int N = 10;
+
+// here we are using synchronized block because
+// we want only one thread (either even or odd) to access the critical section at a time.
+// This prevents both threads from printing at the same time and ensures proper ordering.
+// It also allows correct usage of wait() and notify(), which require the current thread to hold the object's monitor.
+
     public void evenNumber() {
         synchronized (this) {
             while (count < N) {
