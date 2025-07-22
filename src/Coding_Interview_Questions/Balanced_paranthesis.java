@@ -22,8 +22,9 @@ public class Balanced_paranthesis {
             }
             // If closing bracket, check stack
             else if (ch == ')' || ch == '}' || ch == ']') {
-                if (stack.isEmpty()) return false;
-
+                if (stack.isEmpty()) {
+                    return false;
+                }
                 char top = stack.pop();
                 if ((ch == ')' && top == '(') ||
                         (ch == '}' && top == '{') ||
