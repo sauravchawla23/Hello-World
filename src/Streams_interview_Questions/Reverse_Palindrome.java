@@ -11,8 +11,9 @@ public class Reverse_Palindrome {
         Stream<StringBuilder> stringBuilderStream = Arrays.stream(s).map(x -> new StringBuilder(x).reverse());
         stringBuilderStream.forEach(x-> System.out.println(x));
 
-        System.out.println("palindrome");
         //find palindrome string
+        System.out.println("palindrome");
+
         Arrays.stream(s).filter(x -> x.equals(new StringBuilder(x).reverse().toString())).forEach(a-> System.out.println(a));
 
 
