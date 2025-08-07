@@ -22,7 +22,7 @@ public class findOccurfenceOfChar {
 
         //using hashmap in key value pair
         String s1 = "aaaabbcccdee";
-        Map<Character,Integer> m = new HashMap<>();int count1 = 1;
+        Map<Character,Integer> m = new HashMap<>();
         for(int j=0;j<s1.length();j++){
 
             m.put(s1.charAt(j), m.getOrDefault(s1.charAt(j), 0) + 1);
