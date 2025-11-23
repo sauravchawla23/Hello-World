@@ -10,6 +10,6 @@ public class number_div_3_8 {
         //The anyMatch() method in Stream API checks whether at least one element
         // in the stream matches the given condition.
         boolean b = l.stream().anyMatch(i -> i % 3 == 0);
-        System.out.println(b);
+        System.out.println(b);//true
     }
 }
