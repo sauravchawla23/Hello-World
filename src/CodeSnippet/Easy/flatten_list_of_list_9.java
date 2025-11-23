@@ -14,6 +14,6 @@ public class flatten_list_of_list_9 {
         );
 
         List<Integer> list = l.stream().flatMap(i -> i.stream()).toList();
-        System.out.println(list);
+        System.out.println(list);//[1, 2, 3, 4, 5, 6]
     }
 }
