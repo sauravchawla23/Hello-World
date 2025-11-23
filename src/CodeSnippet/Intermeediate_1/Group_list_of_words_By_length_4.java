@@ -15,6 +15,6 @@ public class Group_list_of_words_By_length_4 {
         // ex : 5 - apple,mango so here 5 is the key and mango and apple are the values
         List<String> list = Arrays.asList("apple", "mango", "banana", "cat", "ball", "dog", "nose");
         Map<Integer, List<String>> collect = list.stream().collect(Collectors.groupingBy(i -> i.length()));//we make the key based on length
-        System.out.println(collect);
+        System.out.println(collect);//{3=[cat, dog], 4=[ball, nose], 5=[apple, mango], 6=[banana]}
     }
 }
