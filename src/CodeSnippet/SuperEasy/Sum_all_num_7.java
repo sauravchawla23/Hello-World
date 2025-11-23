@@ -9,5 +9,7 @@ public class Sum_all_num_7 {
         List<Integer> l = Arrays.asList(1,2,3,4,5);
         Integer sum = l.stream().reduce(0, (a, b) -> a + b);
         System.out.println(sum);
+        int sum1 = l.stream().mapToInt(i->i).sum();
+        System.out.println(sum1);
     }
 }
