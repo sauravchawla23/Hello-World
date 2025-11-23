@@ -18,6 +18,7 @@ public class CountOccrunceInList_5 {
         //so here key are fruits and there count is value
         List<String> list = Arrays.asList("apple", "banana", "apple", "mango", "banana","apple");
         Map<String, Long> collect = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        System.out.println(collect);
+        System.out.println(collect);//{banana=2, apple=3, mango=1}
+
     }
 }
