@@ -10,6 +10,6 @@ public class Check_positive_7 {
         List<Integer> l = Arrays.asList(1,2,3,-1,4);
         //The allMatch() method in Stream API checks whether all elements in the stream satisfy a given condition (a boolean test).
         boolean b = l.stream().allMatch(i -> i > 0); // each element will go one by one and checks the condition
-        System.out.println(b);
+        System.out.println(b);//false
     }
 }
